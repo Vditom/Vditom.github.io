@@ -1,63 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <title>Schéma HTML simple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Basketball</title>
 </head>
 
-<body>    
-<img src="image.png" width="100">
-    <nav>
-        <a href="#">Accueil</a> |
-        <a href="#">Actualités</a> |
-        <a href="#">Inscription</a> |
-        <a href="#">Contact</a>
-    </nav>
+<body>
+
+    <header>
+        <img src="image.png" alt="Logo du site" width="100">
+        <h1>Site Basketball</h1>
+    </header>
+    <nav class="navbar navbar-dark bg-dark">
+      </nav>
+      <nav class="navbar navbar-dark bg-primary">
+      </nav>
+      <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      </nav>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Accueil</a>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Actualités</a>
+        </nav>
+      </div>
     <hr>
-    <table cellspadding="5" cellspacing="5">
-            
-            
-            
-        
-    </table>
-<hr>
-<section>
-    <h2>Actualités</h2>
-    <img src="JamesHarden.jpg" width="500">
-    <img src="VictorWembanyama.jpg" width="247">
-    <img src="Ja_Morant.jpg" width="210">
-</section>
-<hr>
-<section>
-    <h2>Inscription</h2>
-    <form action="maquette.html" method="post">
+
+    <section id="actualites">
+        <h2>Actualités NBA</h2>
+
+        <section id="actualites">
+            <p align="center">
+                <img src="JamesHarden.jpg" alt="James Harden" width="650" hspace="70">
+                <img src="VictorWembanyama.jpg" alt="Victor Wembanyama" width="323" hspace="70">
+                <img src="Ja_Morant.jpg" alt="Ja Morant" width="275" hspace="70">
+            </p>
+        </section>
+        <hr>
+
+    <section id="inscription">
+        <h2>Inscription</h2>
+
+        <form action="maquette.html" method="post">
+
+            <div>
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="Nom" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="Email" required>
+            </div>
+
+            <br>
+
+            <div>
+                <button type="submit">S'inscrire</button>
+                <button type="reset">Annuler</button>
+            </div>
+
+        </form>
+    </section>
+
+    <hr>
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <address>
+            <p><strong>Adresse :</strong> 123 Rue du Basket</p>
+            <p><strong>Email :</strong> contact@sitebasket.com</p>
+            <p><strong>Téléphone :</strong> 06 00 00 00 00</p>
+        </address>
+
+        <p>[ Carte Google Maps ici ]</p>
+    </section>
+
+    <hr>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
         <p>
-            <label>Nom :</label><br>
-            <input type="text" name="Nom">
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
         </p>
-        <p>
-            <label>Email :</label><br>
-            <input type="email" name ="Email">
-        </p>
-        <p>
-            <button type="submit">Inscription</button>
-            <button type="reset">Annuler</button>
-        </p>
-    </form>
-    <p>[ Image ]</p>
-</section>
-<hr>
-<section>
-    <h2>Contact</h2>
-    <p>Adresse</p>
-    <p>Email</p>
-    <p>Téléphone</p>
-    <p>[ Carte ]</p>
-</section>
-<hr>
-<footer>
-    <p>Instagram | Facebook | Twitter</p>
-    <p>www.liensiteexterne.com</p>
-</footer>
+        <p>&copy; 2026 Site Basketball - Tous droits réservés</p>
+    </footer>
+
 </body>
 </html>
