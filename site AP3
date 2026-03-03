@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Schéma HTML simple</title>
+</head>
+
+<body>    
+<img src="image.png" width="100">
+    <nav>
+        <a href="#">Accueil</a> |
+        <a href="#">Actualités</a> |
+        <a href="#">Inscription</a> |
+        <a href="#">Contact</a>
+    </nav>
+    <hr>
+    <table cellspadding="5" cellspacing="5">
+
+    </table>
+<hr>
+<section>
+    <h2>Actualités</h2>
+    <img src="JamesHarden.jpg" width="500">
+    <img src="VictorWembanyama.jpg" width="247">
+    <img src="Ja_Morant.jpg" width="210">
+</section>
+<hr>
+<section>
+    <h2>Inscription</h2>
+    <form action="maquette.html" method="post">
+        <p>
+            <label>Nom :</label><br>
+            <input type="text" name="Nom">
+        </p>
+        <p>
+            <label>Email :</label><br>
+            <input type="email" name ="Email">
+        </p>
+        <p>
+            <button type="submit">Inscription</button>
+            <button type="reset">Annuler</button>
+        </p>
+    </form>
+    <p>[ Image ]</p>
+</section>
+<hr>
+<section>
+    <h2>Contact</h2>
+    <p>Adresse</p>
+    <p>Email</p>
+    <p>Téléphone</p>
+    <p>[ Carte ]</p>
+</section>
+<hr>
+<footer>
+    <p>Instagram | Facebook | Twitter</p>
+    <p>www.liensiteexterne.com</p>
+</footer>
+</body>
+</html>
